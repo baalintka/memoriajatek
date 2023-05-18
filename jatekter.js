@@ -1,13 +1,15 @@
+import Kartya from "./kartya.js";
 class Jatekter{
 
-    #karytalista = [];
+    #kartyalista = [];
     #kivalasztottKartyalista = [];
 
     construct(kartyalista){
         const szuloELEM=$("article");
-        this.#kartyaLista = kartyaLista;
+        this.#kartyalista = kartyalista;
+        this.#init();
         for (let index = 0; index < kartyalista.length; index++) {
-            Lapok = new Jatekter(szuloELEM,kartyalista[index]);
+            Lapok = new Jatekter(kartyalista[index],szuloELEM);
             
         }
     }

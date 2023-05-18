@@ -1,24 +1,22 @@
-class Kartya{
-    #fajlnev
-    #allapot
-    #blokkolt
-    #divElem
-    #imgElem
 
+import Jatekter from "./jatekter.js";
+class Kartya {
+    #fajlnev;
+    #allapot;
+    #blokkolt;
+    #divElem;
+    #imgElem;
 
-}
-construct(szuloelem,fajlnev){
-    this.#faljnev =fajlnev;
-    this.#allapot =false;
-    this.#szuloelem=szuloelem;
-    szuloelem.append(
-        `<div class "kartyak">`
+    constructor(fajlnev, szuloelem) {
+        this.#fajlnev = fajlnev;
         
-
-
-    )
-
-
+        this.#szuloElem = szuloelem;
+        szuloelem.append = `
+            <div class="kartyak">
+                <img src="" alt="kép">
+            </div>`;
+        this.#allapot = false;
+    }
 }
 
 export default Kartya;
